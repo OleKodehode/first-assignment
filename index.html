@@ -3,60 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vis hva jeg kan etter første uken</title>
+    <title>Bilder fra Tustna</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
-      <h2>Velkommen</h2>
-      <nav>
-        <!-- TODO: Kan byttes med faktiske linker istedenfor p. 
-         Nettside satt opp til å mimic'e en eventuelt hjemmeside/portfolio, hvor denne siden da er "Første Uke" -->
-        <p>| Hjem |</p>
-        <p>| - Første Uke - |</p>
-        <p>| Om Meg |</p>
-        <p>| Kontakt Meg |</p>
-      </nav>
+      <h2 id="title-text">Bilder fra Tustna</h2>
     </header>
     <main>
-      <section>
-        <h3>Hva lært vi under den første uken hos Kodehode?</h3>
-        <p>
-          Første dag bestod av grunnleggende HTML, oppsett av github og starten
-          av første oppgave i kurset.
-        </p>
-        <br />
-        <p>
-          Blant annet struktur i HTML, rask introduksjon til emmets, gamle tags
-          man kan komme over slik som b, i, em etc.
-        </p>
-        <br />
-        <p>En vanlig nettside består som regel av;</p>
+        <!-- unordered list for bruk i bilde-karusell -->
         <ul>
           <li>
-            Head - Som består av som regel meta informasjon om nettsiden, slik
-            som tittel, character list, referanse til stylesheet o.l
-          </ol>
-          <li>
-            Body - Hoved "boksen" for en nettside, den ytre boksen.
+            <div class="img-container">
+              <img
+                src="./images/img_1_sunshine.jpg"
+                alt="Sollys over landskap"
+              />
+            </div>
           </li>
           <li>
-            Header - Ikke det samme som head, brukes som regel til navigation
-            bar, velkomst melding og andre ting som plasseres øverst på en
-            nettside
-          </li>
-          <li>Main - en "navngitt" div for organisering av hoved innholdet på nettsiden
+            <div class="img-container">
+              <img 
+              src="./images/img_2_sunset.jpg" 
+              alt="Solnedgang ved havet" 
+              />
+            </div>
           </li>
           <li>
-            Footer - en "navngitt" div for organisering av alt innhold du ønsker på bunnen av en nettside, slik som copyright, mer navigering e.l
+            <div class="img-container">
+            <img
+              src="./images/img_3_cloudy_mountain.jpg"
+              alt="Skyteppe over fjell"
+            />
+            </div>
+          </li>
+          <li>
+            <div class="img-container">
+              <img
+                src="images/img_4_moonlight.jpg"
+                alt="Månelys over fjellet"
+              />
+            </div class="img-container">
+          </li>
+          <li>
+            <div class="img-container">
+            <img
+              src="images/img_5_trees.jpg"
+              alt="Trer ved havet på en grå dag"
+            />
+            </div>
+          </li>
+          <li>
+            <div class="img-container">
+              <img 
+              src="images/img_6_horizon.jpg" 
+              alt="Fjæra langs havet" 
+              />
+            </div>
+          </li>
+          <li>
+            <div class="img-container">
+            <img
+              src="images/img_7_mountain.jpg"
+              alt="Endå ett skyteppe over fjellet"
+            />
+            </div>
           </li>
         </ul>
-        <hr />
-        <!-- TODO: Legg til hva som blir gjennomgått de neste dagene og legg på mer CSS utifra hva som blir lært bort.-->
-      </section>
     </main>
     <footer>
-      <p>Laget av Ole under kurs hos Kodehode/Jobloop</p>
+      <p id="footer-text">Laget av Ole under kurs hos Kodehode/Jobloop</p>
     </footer>
   </body>
 </html>
