@@ -8,6 +8,7 @@ D90429 - Rød */
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 header {
@@ -38,7 +39,6 @@ main {
 ul {
   height: 98%;
   padding: 5px;
-  margin-top: 0;
   display: flex;
   gap: 4svw;
   overflow-x: scroll;
@@ -47,6 +47,8 @@ ul {
   scroll-marker-group: after;
 }
 
+/* Scroll bar og carousel er egentlig litt over hva jeg egentlig vet.
+   Brukt tid på å google for å prøve og få det til. */
 ul::scroll-marker-group {
   position: absolute;
   position-anchor: --myCarousel;
@@ -104,12 +106,10 @@ li {
   scroll-snap-align: center;
   max-width: 95%;
   height: 95%;
+  /* background-color: rgba(0, 0, 255, 0.5); */
+  justify-content: center;
+  align-content: center;
 }
-
-/* li:nth-child(even) {
-  background-color: #2b2d42;
-  border: 1px solid #8d99ae;
-} */
 
 li::scroll-marker {
   content: "";
@@ -125,17 +125,20 @@ li::scroll-marker:target-current {
 }
 
 .img-container {
-  max-height: 95%;
-  max-width: 100%;
+  max-height: 100%;
   display: flex;
   justify-content: center;
+  align-content: center;
+  /* background-color: rgba(255, 0, 0, 0.5); */
 }
 
 img {
-  max-width: 100%;
+  display: block;
+  max-inline-size: 100%;
   height: auto;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 10px 10px 5px #2b2d42;
+  object-fit: cover;
 }
 
 footer {
