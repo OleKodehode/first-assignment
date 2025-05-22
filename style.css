@@ -5,9 +5,13 @@ EDF2F4 - Hvit
 EF233C - Lys rød
 D90429 - Rød */
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 header {
-  min-height: 50px;
-  max-height: 10vh;
+  min-height: 10svh;
   background-color: #8d99ae;
   border-radius: 0 0 10px 10px;
 }
@@ -16,16 +20,15 @@ header {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   text-align: center;
-  padding-left: 10px;
-  padding-top: 10px;
-  margin-top: 0px;
+  padding-top: 20px;
   font-style: italic;
   color: #2b2d42;
+  text-shadow: -1px 0 #edf2f4, 0 1px #edf2f4, 1px 0 #edf2f4, 0 -1px #edf2f4;
 }
 
 main {
-  height: 80vh;
-  width: 85vw;
+  height: 80svh;
+  width: 85svw;
   background-color: #edf2f4;
   margin: 0 auto;
 }
@@ -35,7 +38,7 @@ ul {
   padding: 5px;
   margin-top: 0;
   display: flex;
-  gap: 4vw;
+  gap: 4svw;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   anchor-name: --myCarousel;
@@ -45,12 +48,12 @@ ul {
 ul::scroll-marker-group {
   position: absolute;
   position-anchor: --myCarousel;
-  top: calc(anchor(bottom) - 7vh);
+  top: calc(anchor(bottom) - 6svh);
   justify-self: anchor-center;
 
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
 }
 
 ul::scroll-button(*) {
@@ -80,21 +83,19 @@ ul::scroll-button(*):disabled {
 
 ul::scroll-button(left) {
   content: "◄";
-  left: calc(anchor(left) - 5vw);
+  left: calc(anchor(left) - 5svw);
   bottom: anchor(center);
 }
 
 ul::scroll-button(right) {
   content: "►";
-  right: calc(anchor(right) - 5vw);
+  right: calc(anchor(right) - 5svw);
   bottom: anchor(center);
 }
 
 /* flex: 0 0 100% for å få hvert liste objekt til å ta opp hele vidden til UL boksen */
 li {
   list-style-type: none;
-  background-color: #8d99ae;
-  border: 1px solid #2b2d42;
   padding: 10px;
   flex: 0 0 100%;
   border-radius: 5px;
@@ -129,15 +130,14 @@ li::scroll-marker:target-current {
 
 img {
   height: 100%;
-  border: 2px solid #2b2d42;
   border-radius: 20px;
+  box-shadow: 10px 10px 5px #2b2d42;
 }
 
 footer {
   text-align: center;
   font-style: italic;
-  min-height: 50px;
-  max-height: 10vh;
+  min-height: 10svh;
   background-color: #8d99ae;
   padding-left: 10px;
   align-content: center;
@@ -145,5 +145,5 @@ footer {
 }
 
 #footer-text {
-  color: #2b2d42;
+  color: #2b2d42;x
 }
