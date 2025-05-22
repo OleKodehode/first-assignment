@@ -13,7 +13,6 @@ D90429 - Rød */
 header {
   min-height: 10svh;
   background-color: #8d99ae;
-  border-radius: 0 0 10px 10px;
 }
 
 #title-text {
@@ -26,10 +25,13 @@ header {
   text-shadow: -1px 0 #edf2f4, 0 1px #edf2f4, 1px 0 #edf2f4, 0 -1px #edf2f4;
 }
 
+body {
+    background-color: #edf2f4;
+}
+
 main {
   height: 80svh;
-  width: 85svw;
-  background-color: #edf2f4;
+  width: 90svw;
   margin: 0 auto;
 }
 
@@ -100,7 +102,7 @@ li {
   flex: 0 0 100%;
   border-radius: 5px;
   scroll-snap-align: center;
-  max-width: 99%;
+  max-width: 95%;
   height: 95%;
 }
 
@@ -123,13 +125,14 @@ li::scroll-marker:target-current {
 }
 
 .img-container {
-  height: 95%;
+  max-height: 95%;
   display: flex;
   justify-content: center;
 }
 
 img {
-  height: 100%;
+  height: auto;
+  max-width: 100%;
   border-radius: 20px;
   box-shadow: 10px 10px 5px #2b2d42;
 }
@@ -139,11 +142,10 @@ footer {
   font-style: italic;
   min-height: 10svh;
   background-color: #8d99ae;
-  padding-left: 10px;
   align-content: center;
-  border-radius: 10px 10px 0 0;
 }
 
 #footer-text {
   color: #2b2d42;x
 }
+
