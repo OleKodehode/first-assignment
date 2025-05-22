@@ -26,7 +26,7 @@ header {
 }
 
 body {
-    background-color: #edf2f4;
+  background-color: #edf2f4;
 }
 
 main {
@@ -126,13 +126,14 @@ li::scroll-marker:target-current {
 
 .img-container {
   max-height: 95%;
+  max-width: 100%;
   display: flex;
   justify-content: center;
 }
 
 img {
-  height: auto;
   max-width: 100%;
+  height: auto;
   border-radius: 20px;
   box-shadow: 10px 10px 5px #2b2d42;
 }
@@ -146,6 +147,5 @@ footer {
 }
 
 #footer-text {
-  color: #2b2d42;x
+  color: #2b2d42;
 }
-
